@@ -1,6 +1,6 @@
 - Appium
 	- [ADB基本操作](Appium/adb基本命令.md)
-	- [Appium/Appium+python自动化测试](Appium/Appium+python自动化测试.md)
+	- [Appium+python自动化测试](Appium/python自动化测试.md)
 	- [Appium环境搭建](Appium/Appium环境搭建.md)
 
 	
