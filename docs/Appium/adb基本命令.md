@@ -24,8 +24,8 @@
 
 > mFocusedApp=AppWindowToken{ed72aac token=Token{9d3605f ActivityRecord{cfae0fe u0 com.android.settings/.Settings t7}}}
 
-包名:`com.android.settings`   
-界面名:`.Settings`    
+包名:`com.android.settings`
+界面名:`.Settings`
 注意：界面名在有些文章中可能会被叫做启动名
 
 **一、adb 文件传输**
@@ -81,9 +81,9 @@ WaitTime: 1248
 Complete
 ```
 
-**ThisTime：** 该界面启动毫秒   
-**TotalTime：** 应用自身启动耗时= ThisTime+应用application 等资源启动耗时   
-**WaitTime：** 系统启动应用耗时=TotalTime + 系统资源启动时间   
+**ThisTime：** 该界面启动毫秒
+**TotalTime：** 应用自身启动耗时= ThisTime+应用application 等资源启动耗时
+**WaitTime：** 系统启动应用耗时=TotalTime + 系统资源启动时间
 **三、获取手机日志**
 命令格式
 
@@ -177,7 +177,7 @@ appium 的启动实际上是在本机使用了4723端口开启了一个服务
 
 **1.1 在脚本内启动其它app**
 
-**应用场景**    
+**应用场景**
 
 如果一个应用需要跳转到其它应用，就可以使用这个api进行应用的跳转，就像我们通过外卖应用下订单之后会跳转到支付页面一样.
 **方法名和参数**
@@ -199,11 +199,11 @@ time.sleep(3)
 driver.quit()
 ```
 
-**1.2 获取app 的包名和界面名**       
+**1.2 获取app 的包名和界面名**
 
-**应用场景**     
+**应用场景**
 
-当我们从一个应用跳转到另外一个应用的时候，想输出其包名，界面名或者想在报告中展现对象信息，我们就可以调用这个属性来进行获取    
+当我们从一个应用跳转到另外一个应用的时候，想输出其包名，界面名或者想在报告中展现对象信息，我们就可以调用这个属性来进行获取
 
 **方法和属性**
 
@@ -273,9 +273,9 @@ print(driver.current_package)
 com.android.launcher3
 ```
 
-如果调用`driver.quit()`后获取包名，则会报错，因为driver 对象已经被关闭了.     
+如果调用`driver.quit()`后获取包名，则会报错，因为driver 对象已经被关闭了.
 
-**1.4 安装、卸载及判断应用是否被安装**    
+**1.4 安装、卸载及判断应用是否被安装**
 
 **应用场景**
 
@@ -315,11 +315,11 @@ driver.remove_app(app_id)
 driver.is_app_installed(app_id)
 ```
 
-**1.5 将应用置于后台**     
+**1.5 将应用置于后台**
 
-**应用场景**    
+**应用场景**
 
-银行类app 会在进入后台一定时间后，如果再回到前台页面也会再输入密码，如果需要自动化测试这种功能，可以使用这个api 进行测试     
+银行类app 会在进入后台一定时间后，如果再回到前台页面也会再输入密码，如果需要自动化测试这种功能，可以使用这个api 进行测试
 
 **方法**
 
