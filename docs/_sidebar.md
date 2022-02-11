@@ -19,7 +19,12 @@
 	
   
 - python
-	- [初识spring框架](spring/【10分钟学Spring】：（一）初识Spring框架.md)
+	- python基础
+      - [1.基础语法&数据结构](python\\python基础\\1.基础语法&数据结构.md)
+      - [1.循环控制流程](python/python基础/2.循环控制流程.md)
+      - [1.函数&函数式编程](python/python基础/3.函数&函数式编程.md)
+	- unittest
+  
 
 - 前端
 	- [初识spring框架](spring/【10分钟学Spring】：（一）初识Spring框架.md)
