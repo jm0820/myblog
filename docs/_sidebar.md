@@ -1,5 +1,5 @@
 - Appium
-	- [Appium环境搭建](Appium/Appium 环境搭建.md)
+	- [Appium环境搭建](Appium/Appium.md)
 	- [初识spring框架](spring/【10分钟学Spring】：（一）初识Spring框架.md)
 	
 
