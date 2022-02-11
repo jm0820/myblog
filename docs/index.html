@@ -14,7 +14,13 @@
     window.$docsify = {
       name: '',
       repo: '',
-      loadSidebar: true
+      loadSidebar: true,
+      search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            noData: '找不到结果',//搜索不到结果时显示
+            paths: 'auto',//自动
+            placeholder: '搜索',//搜索框提示
+        },
     }
   </script>
   <!-- 添加代码高亮 -->
@@ -22,6 +28,9 @@
 <script src="//unpkg.com/prismjs/components/prism-go.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+<!-- 搜索 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
