@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>小王同学</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css" />
+    <meta charset="UTF-8">
+    <title>个人博客</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
+    <nav>
+        < a href=" ">EN</ a>
+        < a href="#/zh-cn/">中文</ a>
+      </nav>
+<div id="app"></div>
+<script>
     window.$docsify = {
-      name: '小王',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      search: {
+        name: '个人博客',
+        repo: 'https://github.com/wjj815/myblog',
+        loadSidebar: true,
+        loadNavbar: true,
+        subMaxLevel: 3,
+        search: {
             maxAge: 86400000, // 过期时间，单位毫秒，默认一天
             noData: '找不到结果',//搜索不到结果时显示
             paths: 'auto',//自动
             placeholder: '搜索',//搜索框提示
-        }
+        },
+        ga: 'UA-XXXXX-Y' // 谷歌统计
     }
-  </script>
-  <!-- 添加代码高亮 -->
+</script>
+<!-- search -->
+
+<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!--谷歌统计-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+<!-- 添加代码高亮 -->
 <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-go.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
-<!-- 搜索 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-
- <!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/browse/prismjs@1.25.0/components/prism-shell-session.js"></script>
 </body>
 </html>
