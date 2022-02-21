@@ -95,6 +95,7 @@ color:rgbs(255,0,0,.65)
 - 英语单词表示法，比如color:red;仅仅用于学习临时设置一下颜色，工作是基本不用这样的形式，因为追求精确   
 
     
+
 **2、font-size 属性**   
 
 用来设置字号，单位通常为px,除此之外还有em,rem等等单位。    
@@ -205,7 +206,7 @@ font: italic bold 20px/1.5 Arial,"微软雅黑"
 
 - 元素的总高度计算公式
 > 总元素高度= 宽度+左内边距+右内边距+左边框+右边框
-    
+
 一旦为页面设置了恰当的 DTD，大多数浏览器都会按照上面的图示来呈现内容。然而 IE 5 和 6 的呈现却是不正确的。根据 W3C 的规范，元素内容占据的空间是由 width 属性设置的，而内容周围的 padding 和 border 值是另外计算的。不幸的是，IE5.X 和 6 在怪异模式中使用自己的非标准模型。这些浏览器的 width 属性不是内容的宽度，而是内容、内边距和边框的宽度的总和。
 
 虽然有方法解决这个问题。但是目前最好的解决方案是回避这个问题。也就是，不要给元素添加具有指定宽度的内边距，而是尝试将内边距或外边距添加到元素的父元素和子元素。
@@ -214,7 +215,7 @@ font: italic bold 20px/1.5 Arial,"微软雅黑"
 **边框样式 border-style**    
     
     定义边框的样式     
-    
+
 **边框宽度 border-width**      
     
     为边框指定宽度有两种方法，
@@ -227,11 +228,11 @@ font: italic bold 20px/1.5 Arial,"微软雅黑"
     1、英文名称
     2、RGB
     3、十六进制    
-    
+
 **边框-单独设置各边**    
     
     CSS 可以设置不同侧面的边框为不同的样式
-    
+
 如下所示，依次为顶部边框，右侧边框，底部边框，左侧边框
 ```
     border-top-style:dotted;
@@ -247,20 +248,20 @@ border-style:dotted solid double dashed;
 border-style:dotted solid double;
 <!--依次为上下，左右-->
 border-style:dotted solid;
-```      
+```
 
 **边框-简写属性**       
 
     类似于之前font 属性的简写，同样，边框也有很多属性，不必一个一个写清楚，可以用border 属性简写
-    
+
 如下所示,顺序如下：
 - border-width
 - border-style (required)
 - border-color   
- 
+
 ```
 border:5px solid red;
-```    
+```
 ## 外边距 margin    
 margin 是盒子的外边距，是盒子和其他盒子之间的距离，是有四个方向的：
 - margin-top
@@ -330,7 +331,7 @@ padding 属性用四个数值以空格隔开进行设置，分别表示上，右
         padding: 10px 30px 50px 70px;
         background-color: orange;
     }
-```     
+```
 **2、padding 的三数值写法**      
 padding 如果用三个数值以空格隔开进行设置，分别表示上，左右，下的padding     
 ```
@@ -350,7 +351,7 @@ padding 如果用三个数值以空格隔开进行设置，分别表示上下，
         padding:10px 20px;
         background-color: orange;
     }
-```    
+```
 
 ## 其它
 #### box-sizing 属性   
@@ -369,7 +370,7 @@ padding 如果用三个数值以空格隔开进行设置，分别表示上下，
     
     <!-- box-sizing 属性 -->
     <div class="boxsizing"></div>
-```       
+```
 如上所示的一个盒子，设置了box-sizing 属性后，实际的宽高从之前的240px\*240px变为200px\*200px了，padding 和border 向内缩进。   
 
 这个属性分别有三个值：
@@ -385,17 +386,17 @@ padding 如果用三个数值以空格隔开进行设置，分别表示上下，
 有一个div 和 button 元素，除了背景色之外，其他样式都相同，在chrom 浏览器上，二者的显示效果却有差异。   
 ```
 链接地址：https://class.imooc.com/lesson/jobdetail?mid=44022#
-```   
+```
 
 #### display 属性   
 
 ##### 说在前面
 **行内元素和块级元素**    
-|display属性类型|是否能并排显示|是否能设置宽高|当不设置width属性时|举例|       
-|-|-|-|-|-|-|     
-|块级元素|否|是|width自动撑满|div,section,header,h系列，li,ul等|     
-|行内元素|是|否|width自动收缩|a,span,em,b,u,i等|                       
 
+| display属性类型 | 是否能并排显示 | 是否能设置宽高 | 当不设置width属性时 | 举例                              |
+| --------------- | -------------- | -------------- | ------------------- | --------------------------------- |
+| 行内元素        | 是             | 否             | width自动收缩       | a,span,em,b,u,i等                 |
+| 块级元素        | 否             | 是             | width自动撑满       | div,section,header,h系列，li,ul等 |
 **行内块**      
 
 img 和表单元素是特殊的行内块，它们既能设置宽度高度，也能够并排显示   
